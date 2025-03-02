@@ -213,7 +213,7 @@ const resetPassword = async (req, res, next) => {
     const { password } = req.body
 
     if (!token || !password) {
-        return next(new AppError('something went wron', 400))
+        return next(new AppError('something went wrong', 400))
     }
 
     const forgotPasswordToken = crypto

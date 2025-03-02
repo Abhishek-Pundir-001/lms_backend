@@ -94,7 +94,7 @@ const createCourse = async (req, res, next) => {
 }
 
 const updateCourse = async (req, res, next) => {
-    const { title, description } = req.body;
+    // const { title, description } = req.body;
     const { id } = req.params;
 
     // const course = courseModel.findById({ id });
